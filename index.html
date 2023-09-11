@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Semantic tags - example file</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="blog-article">
+            <article>
+                <header>
+                    <h1>Article title #1</h1>
+                    <p>
+                        Publication date: <time datetime="2035-12-12">12 grudnia 2035</time>
+                        <span class="author">
+                            <a href="adam.html">Adam Kowalski</a>
+                        </span>
+                    </p>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt nostrum ipsum alias nisi omnis sint dolore natus saepe repellat tempora.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt nostrum ipsum alias nisi omnis sint dolore natus saepe repellat tempora.</p>
+                <section class="comments">
+                    <article class="comment">
+                        <header>
+                            <p>
+                                Publication date:
+                                <time datetime="2035-12-14">2023-12-14</time>
+                                <a href="#">Ola</a>
+                            </p>
+                        </header>
+                        <p>Comment #1 Lorem ipsum dolor sit amet.</p>
+                    </article>
+                    <article class="comment">
+                        <p>Comment #2 Lorem ipsum dolor sit amet.</p>
+                        <footer>
+                            <p>
+                                Publication date:
+                                <time datetime="2035-12-15">2023-12-15</time>
+                                <a href="#">Kasia</a>
+                            </p>
+                        </footer>
+                    </article>
+                </section>
+            </article>
+            <article>
+                <header>
+                    <h1>Article title #2</h1>
+                    <p>
+                        Publication date: <time datetime="2035-12-12">12 grudnia 2035</time>
+                        <span class="author">
+                            <a href="adam.html">Adam Kowalski</a>
+                        </span>
+                    </p>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolorum nesciunt placeat corporis assumenda cum corrupti, rerum nulla sit accusamus. In corporis unde debitis quisquam? Veniam rem, nihil temporibus deleniti ipsum sit id, eligendi voluptatum quia eius odit, a enim.</p>
+            </article>
+        </section>
+        <section class="top-articles">
+            <h4>Most popular articles:</h4>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet.
+                    <a href="#">Read more</a>
+                </p>
+            </article>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet.
+                    <a href="#">Read more</a>
+                </p>
+            </article>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet.
+                    <a href="#">Read more</a>
+                </p>
+            </article>
+        </section>
+    </main>
+    <aside id="sidebar">
+        <section class="widget search">
+            <input type="text" name="search">
+            <button>Search</button>
+        </section>
+        <section class="widget sidebar-menu">
+            <h4>Categories:</h4>
+            <ul>
+                <li><a href="#">Category #1</a></li>
+                <li><a href="#">Category #2</a></li>
+                <li><a href="#">Category #3</a></li>
+                <li><a href="#">Category #4</a></li>
+            </ul>
+        </section>
+    </aside>
+    <footer>
+        <p>&copy; example.com</p>
+    </footer>
 </body>
 </html>
